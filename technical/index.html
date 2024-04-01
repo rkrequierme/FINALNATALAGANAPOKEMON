@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index-style.css"> <!-- Add this line -->
+</head>
+<body>
+  <div class="main-menu">
+    <button id="start-btn">Start Battle</button>
+  </div>
+
+  <audio id="bg-music">
+    <source src="background_music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    document.getElementById("start-btn").addEventListener("click", function() {
+      window.location.href = "battle.html?playMusic=true"; // Redirect to the battle page with query parameter
+    });
+  </script>
+</body>
+</html>

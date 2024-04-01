@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Battle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bg-music">
+    <source src="background_music.mp3.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button onclick="playBackgroundMusic()">Play Background Music</button>
+  <div class="battle-title">Lalad Vs Dalal</div>
+  <div class="battle-container">
+    <div id="charmander" class="pokemon charmander">
+    <div class="pokemon-name">Charmander</div>
+    <div class="trainer-name">Trainer: Lalad</div>
+    <a href="https://pokemondb.net/pokedex/charizard"><img src="charmander-ezgif.com-rotate.gif" alt="Charmander"></a>
+    <div class="level-text">Level: 50</div>
+    <div class="hp-bar">
+        <div id="charmander-hp" class="hp"></div>
+    </div>
+    <div class="hp-text" id="charmander-hp-text"></div>
+    <div class="attack-row">
+      <button class="attack-btn" id="charmander-attack1">Scratch</button>
+      <button class="attack-btn" id="charmander-attack2">Ember</button>
+  </div>
+  <div class="attack-row">
+      <button class="attack-btn" id="charmander-attack3">Fire Spin</button>
+      <button class="attack-btn" id="charmander-attack4">Dragon Breath</button>
+  </div>
+</div>
+
+<div id="pikachu" class="pokemon pikachu">
+    <div class="pokemon-name">Pikachu</div>
+    <div class="trainer-name">Trainer: Dalal</div>
+    <a href="https://pokemondb.net/pokedex/pikachu"><img src="pikachu.gif" alt="Pikachu"></a>
+    <div class="level-text">Level: 50</div>
+    <div class="hp-bar">
+        <div id="pikachu-hp" class="hp"></div>
+    </div>
+    <div class="hp-text" id="pikachu-hp-text"></div>
+    <div class="attack-row">
+        <button class="attack-btn" id="pikachu-attack1">Thunder Shock</button>
+        <button class="attack-btn" id="pikachu-attack2">Quick Attack</button>
+    </div>
+    <div class="attack-row">
+        <button class="attack-btn" id="pikachu-attack3">Thunderbolt</button>
+        <button class="attack-btn" id="pikachu-attack4">Thunder</button>
+    </div>
+</div>
+
+  
+  </div>
+  <div id="game-over-screen" class="game-over-screen">
+    <h1>Game Over</h1>
+    <h2 id="winner-message"></h2>
+    <button id="play-again-btn">Play Again?</button>
+</div>
+
+
+
+  <script src="script.js">
+
+
+  </script>
+</body>
+</html>

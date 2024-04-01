@@ -1,0 +1,33 @@
+body {
+    background-image: url('pokemonbg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; /* Set background position to top center */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh;
+}
+
+.main-menu {
+    text-align: center;
+}
+
+#start-btn {
+    margin-top: 20vh; /* Adjust the margin to position the button at the top */
+    padding: 30px 60px; /* Increase padding for a larger button */
+    font-size: 150px; /* Increase font size */
+    font-weight: bold;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #e64d00;
+}
